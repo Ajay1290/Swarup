@@ -1,0 +1,71 @@
+.sw-card {
+    position: relative;
+    background-color: #fff;
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    border-radius: 4px;
+    color: #555655;
+    border: 0.8px solid $card-border-color;
+    background-clip: border-box;
+}
+
+.sw-card-body{
+    padding: 20px 15px;
+}
+
+.sw-card-title{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    letter-spacing: 0.51px;
+}
+
+.sw-card-subtitle{
+    position: relative;
+    width: 100%;
+    margin: -5px 0px 5px 0px;
+    font-size: 1.2em;
+    letter-spacing: 0.51px;
+    color: $gray-6;
+}
+
+.sw-card-footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 10px 0 -10px 0 ;
+    letter-spacing: 0.51px;
+    font-size: 0.9em;
+}
+
+.sw-card-img,
+.sw-card-img-overlay{
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+}
+
+.sw-card-img{
+    top: 0;
+}
+
+.sw-card-img-overlay{
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    background: rgba(125,125,125,0.55);
+
+    .sw-card-body{
+        height: 100%;
+
+        .sw-card-subtitle{
+            color: $white;
+        }
+    }
+}

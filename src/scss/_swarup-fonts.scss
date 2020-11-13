@@ -1,0 +1,120 @@
+//  Font Sizes
+// -----------------------
+.f-10 {font-size: 10px !important;}
+.f-12 {font-size: 12px !important;}
+.f-14 {font-size: 14px !important;}
+.f-16 {font-size: 16px !important;}
+.f-18 {font-size: 18px !important;}
+.f-20 {font-size: 20px !important;}
+.f-22 {font-size: 22px !important;}
+.f-24 {font-size: 24px !important;}
+.f-26 {font-size: 26px !important;}
+.f-28 {font-size: 28px !important;}
+.f-30 {font-size: 30px !important;}
+.f-32 {font-size: 32px !important;}
+.f-34 {font-size: 34px !important;}
+.f-36 {font-size: 36px !important;}
+.f-38 {font-size: 38px !important;}
+.f-40 {font-size: 40px !important;}
+.f-42 {font-size: 42px !important;}
+.f-44 {font-size: 44px !important;}
+.f-46 {font-size: 46px !important;}
+.f-48 {font-size: 48px !important;}
+.f-50 {font-size: 50px !important;}
+.f-64 {font-size: 64px !important;}
+.f-72 {font-size: 72px !important;}
+.f-100 {font-size: 100px !important;}
+
+//  Boldness
+// -----------------------
+.b-1 {font-weight: $b-1 !important;}
+.b-2 {font-weight: $b-2 !important;}
+.b-3 {font-weight: $b-3 !important;}
+.b-4 {font-weight: $b-4 !important;}
+.b-5 {font-weight: $b-5 !important;}
+
+//  Font Cases
+// -----------------------
+.captalize {text-transform: capitalize !important;}
+.lower {text-transform: lowercase !important;}
+.upper {text-transform: uppercase !important;}
+
+//  Fonts
+// -----------------------
+.sans-serif{font-family: sans-serif !important;}
+.serif{font-family: serif !important;}
+
+//  Alignment
+// -----------------------
+.text-center{text-align: center !important;}
+.text-left{text-align: center !important;}
+.text-right{text-align: center !important;}
+.text-justify{text-align: justify !important;}
+
+.v-baseline{vertical-align: baseline !important;}
+.v-bottom{vertical-align: bottom !important;}
+.v-middle{vertical-align: middle !important;}
+.v-sub{vertical-align: sub !important;}
+.v-sup{vertical-align: sup !important;}
+
+
+// ==========================================
+//  Elements
+// ==========================================
+
+
+//  Headings
+// -----------------------
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1, .h1 { font-size: $f-h1; }
+h2, .h2 { font-size: $f-h2; }
+h3, .h3 { font-size: $f-h3; }
+h4, .h4 { font-size: $f-h4; }
+h5, .h5 { font-size: $f-h5; }
+h6, .h6 { font-size: $f-h6; }
+
+//  Paragraph
+// -----------------------
+p, .p {
+    font-size: $f-base;
+    font-family: serif;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+//  Anchor
+// -----------------------
+a, .a{
+    text-decoration: none;
+    color: $primary;
+}
+
+a:hover, a:focus,
+.a:hover, a:focus{
+    text-decoration: underline;
+    color: rgba($primary, 1.5);
+}
+
+a:active, .a:active{
+    text-decoration: underline;
+    color: rgba($primary, 1.15);
+}
+
+//  ~Misc.
+// -----------------------
+small, .small{
+    font-size: $f-sm;
+}
+
+kbd, .kbd{
+    border: 0.8px solid $gray-6;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: $white;
+    background-color: $gray-9;
+}

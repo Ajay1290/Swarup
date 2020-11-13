@@ -1,0 +1,76 @@
+/// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$breakpoint-sm}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$breakpoint-md}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$breakpoint-lg}) {
+      @content;
+  }
+}
+
+
+@mixin make-container($gutter: $grid-gutter-width) {
+    width: 100%;
+}
+  
+@mixin make-row($gutter: $grid-gutter-width) {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+@mixin make-col-ready() {
+  position: relative;
+  width: 100%;
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
+
+@mixin make-col-sm($size, $columns: $grid-columns) {
+  @include sm{
+    flex: 0 0 percentage($size / $columns);
+    max-width: percentage($size / $columns);
+  }
+}
+
+@mixin make-col-md($size, $columns: $grid-columns) {
+  @include md{
+    flex: 0 0 percentage($size / $columns);
+    max-width: percentage($size / $columns);
+  }
+}
+@mixin make-col-lg($size, $columns: $grid-columns) {
+  @include lg{
+    flex: 0 0 percentage($size / $columns);
+    max-width: percentage($size / $columns);
+  }
+}
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%; // Reset earlier grid tiers
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+  $num: $size / $columns;
+  margin-left: if($num == 0, 0, percentage($num));
+}

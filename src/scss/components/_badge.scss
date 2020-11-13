@@ -1,0 +1,29 @@
+.sw-badge{
+    display: inline-block;
+    padding: .5em ;
+    font-size: 70%;
+    font-weight: 600;
+    line-height: 0.8;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: var(--theme-primary);
+    color: $white;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,
+                background-color .15s ease-in-out,
+                border-color .15s ease-in-out,
+                box-shadow .15s ease-in-out;
+}
+
+.sw-badge-secondary{ color: #000; background-color: var(--theme-secondary); }
+.sw-badge-overlay{ position: absolute; top: -10px; right: -10px; }
+// .sw-badge-primary { color: #fff; background-color: #007bff; }
+// .sw-badge-success { color: #fff; background-color: #28a745; }
+// .sw-badge-danger { color: #fff; background-color: #dc3545; }
+// .sw-badge-warning { color: #212529; background-color: #ffc107; }
+// .sw-badge-info { color: #fff; background-color: #17a2b8; }
+// .sw-badge-light { color: #212529; background-color: #f8f9fa; }
+// .sw-badge-dark { color: #fff; background-color: #343a40; }
+
+.sw-badge-pill { border-radius: 50%; }
