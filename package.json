@@ -1,0 +1,31 @@
+{
+  "name": "swarup",
+  "version": "0.0.1",
+  "description": "The theme-base fully responsive and text-friendly UI library.",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": ["CSS", "JS", "UI library"],
+  "author": "Ajay Patil <ajay.patil.a01@gmail.com>",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^1.2.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "license": "MIT",
+  "homepage": "https://ajay1290.github.io/Swarup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajay1290/Swarup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ajay1290/Swarup/issues"
+  }
+}

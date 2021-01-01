@@ -1,0 +1,14 @@
+.sw-panel{
+    position: relative;
+}
+
+.sw-wing{            
+    height: 0;   
+    opacity: 0;
+    width: 100%;
+}
+
+.sw-wing.show{
+    height: auto;
+    opacity: 1;            
+}
