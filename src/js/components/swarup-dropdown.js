@@ -5,22 +5,22 @@
 // Mulitiple Select
 // ######################################################################
 
-const DROPDOWN_CLASS = 'sw-dropdown';
-const DROPMENU_CLASS = 'sw-dropmenu';
-const DROPDOWN_ITEM_CLASS = 'sw-item';
-const DROPDOWN_LABEL_CLASS = 'sw-droplabel';
-const DROPDOWN_OPENING_CLASS = 'is__opening';
-const DROPDOWN_CLOSEING_CLASS = 'is__closeing';
-const DROPDOWN_ACTIVE_CLASS = "active";
-const DROPDOWN_BUTTON_CLASS = "sw-dropdownbtn";
-const DROPSEARCH_CLASS = "sw-dropsearch";
+const DROPDOWN_CLASS            = 'sw-dropdown';
+const DROPMENU_CLASS            = 'sw-dropmenu';
+const DROPDOWN_ITEM_CLASS       = 'sw-item';
+const DROPDOWN_LABEL_CLASS      = 'sw-droplabel';
+const DROPDOWN_OPENING_CLASS    = 'is__opening';
+const DROPDOWN_CLOSEING_CLASS   = 'is__closeing';
+const DROPDOWN_ACTIVE_CLASS     = "active";
+const DROPDOWN_BUTTON_CLASS     = "sw-dropdownbtn";
+const DROPSEARCH_CLASS          = "sw-dropsearch";
 
 // Search Feature
-const DROPSEARCH_ID = 'sw-dropdown-searchbar';
+const DROPSEARCH_ID         = 'sw-dropdown-searchbar';
 const DROPSEARCHBAR_ELEMENT = `<label for="${DROPSEARCH_ID}" class="sw-item" style="padding:8px 10px;">
                                 <input  id="${DROPSEARCH_ID}" class="sw-form-input-bordered" 
                                         placeholder="Search.." type="search">
-                            </label>`;
+                               </label>`;
 
 export default class Dropdown {
 

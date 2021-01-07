@@ -4,9 +4,9 @@ module.exports = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  url: 'https://ajay1290.github.io/swarup',
-  baseUrl: '/swarup/',
-  projectName: 'swarup',
+  url: 'https://ajay1290.github.io/Swarup',
+  baseUrl: '/Swarup/',
+  projectName: 'Swarup',
   organizationName: 'Ajay1290',
   themeConfig: {
     colorMode: {
@@ -29,7 +29,7 @@ module.exports = {
       items: [
         { to: 'docs/', activeBasePath: 'docs', label: 'Documentation', position: 'left' },
         { to: 'docs/Compoents/buttons', activeBasePath: 'docs', label: 'Components', position: 'left'},
-        { href: 'https://github.com/Ajay1290/swarup', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/Ajay1290/Swarup', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
@@ -37,18 +37,16 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Ajay Patil. Code released under the MIT license.`,
     },
   },
-  scripts: [
-    { src: 'https://cdn.jsdelivr.net/gh/Ajay1290/swarup@0.1/dist/JS/swarup.min.js', async: true },
-  ],
+  scripts: ['Swarup/dist/JS/swarup.js'],
   presets: [
     [ '@docusaurus/preset-classic',
       {
         docs: { sidebarPath: require.resolve('./sidebars.js'), 
-                editUrl: 'https://github.com/Ajay1290/swarup/edit/master/website/' },
+                editUrl: 'https://github.com/Ajay1290/Swarup/edit/master/website/' },
         blog: { showReadingTime: true, 
-                editUrl: 'https://github.com/Ajay1290/swarup/edit/master/website/blog/' },
+                editUrl: 'https://github.com/Ajay1290/Swarup/edit/master/website/blog/' },
         theme: { customCss: [require.resolve('./src/css/custom.css'),
-                             require.resolve('../dist/CSS/swarup.min.css')],  },
+                             'Swarup/dist/CSS/swarup.min.css']},
       },
     ],
   ],

@@ -2662,6 +2662,97 @@ kbd, .kbd {
   opacity: 1;
 }
 
+ul {
+  margin: 0;
+  padding: 4px 0 4px 0;
+  padding-inline-start: 20px;
+}
+ul li {
+  padding: 2px 0 2px 0;
+}
+
+ol {
+  margin: 0;
+  padding: 4px 0 4px 0;
+  padding-inline-start: 20px;
+}
+ol li {
+  padding: 2px 0 2px 0;
+}
+
+.sw-list {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+  transition: height 0.2s cubic-bezier(0.08, 0.52, 0.52, 1);
+}
+.sw-list .sw-item {
+  padding: 8px 12px 8px 12px;
+  display: block;
+}
+.sw-list .sw-item.active {
+  border-left: 2px solid;
+}
+.sw-list .sw-item .sw-list-label {
+  margin: -8px -12px -8px -12px;
+}
+.sw-list .sw-list-label {
+  border-radius: 0.25rem;
+  color: var(--theme-primary);
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  line-height: 20px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 12px;
+  user-select: none;
+  margin-top: 8px;
+}
+.sw-list .sw-list-label.active {
+  background-color: #f8f9fa;
+}
+.sw-list .sw-list-label.active + .sw-list {
+  margin-bottom: -8px;
+}
+.sw-list .sw-list-label.active + .sw-list .sw-item .sw-list-label + .sw-list {
+  margin-top: 8px;
+}
+.sw-list .sw-list-label:hover {
+  background-color: #f8f9fa;
+}
+.sw-list .sw-list-label + .sw-list {
+  height: 0;
+  overflow: hidden;
+  border-left: 1px solid var(--theme-primary);
+}
+.sw-list .sw-list-label::after {
+  background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  background-size: 2rem 2rem;
+  background-position: 50%;
+  content: " ";
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: transform 0.2s linear;
+  transform: rotate(90deg);
+}
+.sw-list .sw-list-label.active::after {
+  background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  background-size: 2rem 2rem;
+  background-position: 50%;
+  content: " ";
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: transform 0.2s linear;
+  transform: rotate(180deg);
+}
+.sw-list .sw-list-label.active + .sw-list {
+  height: auto;
+  overflow: auto;
+}
+
 :root {
   --theme-primary: rgb(202, 34, 15);
   --theme-secondary: #f9f9f9;
@@ -2687,7 +2778,7 @@ body {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.1;
   color: #212529;
   text-align: left;
   background-color: #fff;
