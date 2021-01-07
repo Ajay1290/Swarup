@@ -1,13 +1,17 @@
 {
   "name": "swarup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The theme-base fully responsive and text-friendly UI library.",
   "main": "./src/js/index.js",
   "scripts": {
     "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": ["CSS", "JS", "UI library"],
+  "keywords": [
+    "CSS",
+    "JS",
+    "UI library"
+  ],
   "author": "Ajay Patil <ajay.patil.a01@gmail.com>",
   "devDependencies": {
     "css-loader": "^5.0.1",
