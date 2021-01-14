@@ -1,11 +1,12 @@
 @import './variables';
-@import './swarup-fonts';
 @import './swarup-grid';
-@import './swarup-spacing';
 @import './components/components';
+@import './swarup-fonts';
+@import './swarup-spacing';
+@import './swarup-utils';
 
 :root {
-    --theme-primary: rgb(202, 34, 15);
+    --theme-primary: rgb(44, 17, 221);
     --theme-secondary: #f9f9f9;
     --theme-surface: #ECEEF1;
 }

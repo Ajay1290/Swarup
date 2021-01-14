@@ -1,8 +1,16 @@
 # Swarup UI Library
-The UI/UX Framework to build theme base fully responsive and text-friendly websites.
 
+The UI Library to build theme base fully responsive and text-friendly websites.
+
+[![](https://img.shields.io/npm/v/swarup)](https://www.npmjs.com/package/swarup)
 [![](https://data.jsdelivr.com/v1/package/gh/Ajay1290/swarup/badge)](https://www.jsdelivr.com/package/gh/Ajay1290/swarup)
+[![](https://img.shields.io/github/license/Ajay1290/Swarup)](LICENCE)
 
+## Table of contents
+- [Installation](#installation)
+- [Starter Template](#starter-template)
+- [Links](#links)
+- [Copyright and license](#copyright-and-license)
 
 ## Installation
 You can install it using npm or yarn as below.
@@ -27,7 +35,7 @@ For Javascript:
 <script src="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.1-alpha/dist/JS/swarup.min.js"></script>
 ```
 
-### Starter Template
+## Starter Template
 
 ```html
 <!DOCTYPE html>
@@ -54,9 +62,5 @@ For Javascript:
 * Code: https://github.com/Ajay1290/Swarup
 * Issue tracker: https://github.com/Ajay1290/Swarup/issues
 
-## Contributing
-For guidance on setting up a development environment and how to make a contribution to Swarup, see the [contributing guidelines](CONTRIBUTING.md).
-
-
-## License
-&copy; Ajay Patil 2020-present. Code released under the [MIT license](LICENSE).
+## Copyright and License
+Copyright &copy; 2020-2021 [Ajay Patil](https://github.com/Ajay1290) the Author of Swarup. Code released under the [MIT license](LICENSE).

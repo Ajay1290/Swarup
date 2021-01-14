@@ -4,6 +4,6 @@ import Drawer from './components/swarup-drawer';
 import Input from './components/swarup-form';
 import Tabs from './components/swarup-tabs';
 import Panel from './components/swarup-pannel';
-import './components/swarup-list';
+import List from './components/swarup-list';
 
-export { Drawer, Dropdown, Input, Tabs, Panel }
+export { Drawer, Dropdown, Input, Tabs, Panel, List }
