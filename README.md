@@ -27,12 +27,12 @@ yarn add swarup
 ### CDN Links
 For CSS:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.1-alpha/dist/CSS/swarup.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.4/dist/CSS/swarup.min.css">
 ```
 
 For Javascript:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.1-alpha/dist/JS/swarup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.4/dist/JS/swarup.min.js"></script>
 ```
 
 ## Starter Template
@@ -44,14 +44,14 @@ For Javascript:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.1-alpha/dist/CSS/swarup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.4/dist/CSS/swarup.min.css">
 </head>
 <body>
     <h1>Hello World!</h1>
 
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.1-alpha/dist/JS/swarup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Ajay1290/Swarup@0.0.4/dist/JS/swarup.min.js"></script>
 </body>
 </html>
 ```
