@@ -1,0 +1,17 @@
+.sw-breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: .25rem;
+}
+.sw-breadcrumb-item{ display: flex; }
+.sw-breadcrumb-item.active { color: #6c757d; }
+.sw-breadcrumb-item+.sw-breadcrumb-item { padding-left: .5rem; }
+.sw-breadcrumb-item+.sw-breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Swarup Experiments - Swarup v0.0.4</title>    
+    <link rel="stylesheet" href="../../dist/CSS/swarup.min.css">
+    <style>
+        :root{
+            --theme-primary: #025 !important;
+            --theme-secondary: #fff !important;
+            --theme-surface: #eee !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sw-drawer" id="right">
+        <div class="sw-drawer-body">
+            <h1>Right Default</h1>
+            <button class="sw-btn sw-drawer-cancle-btn">Cancle</button>
+        </div>
+    </div>
+    <div class="sw-drawer sw-drawer-left" id="left">
+        <div class="sw-drawer-body">
+            <h1>Left</h1>
+            <button class="sw-btn sw-drawer-cancle-btn">Cancle</button>
+        </div>
+    </div>
+    <div class="sw-drawer sw-drawer-top" id="top">
+        <div class="sw-drawer-body">
+            <h1>Top</h1>
+            <button class="sw-btn sw-drawer-cancle-btn">Cancle</button>
+        </div>
+    </div>
+    <div class="sw-drawer sw-drawer-bottom" id="bottom">
+        <div class="sw-drawer-body">
+            <h1>Bottom</h1>
+            <button class="sw-btn sw-drawer-cancle-btn">Cancle</button>
+        </div>
+    </div>
+
+    <button class="sw-btn sw-drawer-btn m-3" drawer-target="right">Drawer Right</button>
+    <button class="sw-btn sw-drawer-btn m-3" drawer-target="left">Drawer Left</button>
+    <button class="sw-btn sw-drawer-btn m-3" drawer-target="bottom">Drawer Bottom</button>
+    <button class="sw-btn sw-drawer-btn m-3" drawer-target="top">Drawer Top</button>
+
+
+    <script src="../../dist/JS/swarup.min.js"></script>
+</body>
+</html>

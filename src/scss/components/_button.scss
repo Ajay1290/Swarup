@@ -1,0 +1,183 @@
+.sw-btn {
+    outline: transparent;
+    position: relative;
+    box-sizing: border-box;
+    user-select: none;
+    background-color: $primary;
+    cursor: pointer;
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    border: 1px solid $primary;
+    border-radius: 2px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    padding: 0.4em 1em;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+
+    &:active {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, .12) !important;
+    }
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, .12);
+    }
+    
+    &:focus::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba($gray-1, 0.25);
+        top: 0em;
+        left: 0em;
+        box-shadow: 0 0 10px rgba($gray-1, 0.25);
+        transition: opacity 1.8s;
+    }
+
+}
+
+.sw-btn-outline {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.7px solid $primary !important;
+    color: $primary;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 480ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 480ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, .12);
+    }
+    
+    &:hover,
+    &:focus {
+        background: $primary;
+        color: $surface;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, .12);
+    }
+
+}
+
+.sw-btn-text {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: $primary;
+    box-shadow: none;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 480ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 480ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: $primary;
+        color: $surface;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, .12);
+    }
+
+}
+
+
+.sw-btn-surface{
+    background: $surface !important;
+    color: $primary !important;
+
+    &:focus::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba($black, 0.15);
+        top: 0em;
+        left: 0em;
+        box-shadow: 0 0 10px rgba($gray-1, 0.15);
+        transition: opacity 1.8s;
+    }
+}
+
+.sw-btn-secondary{
+    background-color: $secondary;
+    color: $primary;
+    border: 0.8px solid #c9c9c9;
+
+    &:focus::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba($black, 0.15);
+        top: 0em;
+        left: 0em;
+        box-shadow: 0 0 10px rgba($gray-1, 0.15);
+        transition: opacity 1.8s;
+    }
+}
+
+.sw-btn-group{
+    margin: 0;
+    padding: 0;
+    background-color: $primary;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 1px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.sw-btn-dropdown::before{
+    content: '';
+    border: solid $secondary;
+    background: none;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    bottom: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.sw-btn-sm{
+    font-size: $f-sm;
+    padding: 0.3em 0.6em ;
+}
+
+.sw-btn-md{
+    font-size: $f-base;
+    padding: 0.6em 1.2em ;
+}
+
+.sw-btn-lg{
+    font-size: $f-lg;
+    padding: 0.7em 1.5em;
+}
+
+.sw-btn-ripple {
+    position: absolute; 
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.61);
+    width: 20px;
+    height: 20px;
+    animation: ripple 1s; 
+    opacity: 0; 
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}

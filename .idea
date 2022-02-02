@@ -1,0 +1,31 @@
+Source:  Ant Design (https://github.com/ant-design/ant-design/)
+
+Components:
+	Navigation:
+		Pagination
+		Steps
+
+	Data Entry:
+		Switch
+		Slider
+		Time Picker
+
+	Data Display:
+		Avatar
+		Badge
+		Collapsable
+		Carasouel
+		Calender
+		Timeline
+
+	Feedback:
+		Alert
+		Modal
+		Message
+		Notification
+		Progress
+		PopConfirm
+		Result
+
+	Other:
+		BackToTop

@@ -1,0 +1,84 @@
+
+$primary: var(--theme-primary);
+$secondary: var(--theme-secondary);
+$surface: var(--theme-surface);
+
+$white: #fff !default;
+$gray-1: #f8f9fa !default;
+$gray-2: #e9ecef !default;
+$gray-3: #dee2e6 !default;
+$gray-4: #ced4da !default;
+$gray-5: #adb5bd !default;
+$gray-6: #6c757d !default;
+$gray-7: #495057 !default;
+$gray-8: #343a40 !default;
+$gray-9: #212529 !default;
+$black: #000 !default;
+
+$danger: #dc3545 !default;
+
+// body
+// 
+// Body variables here.
+$body-color: $gray-9;
+$body-bg: $white;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+                            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:     SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:          $font-family-sans-serif !default;
+
+
+$f-base:    14px !default; // Assumes the browser default, typically `16px`
+$f-lg:      $f-base * 1.25 !default;
+$f-sm:      $f-base * .7 !default;
+
+$b-1:   200 !default;
+$b-2:   400 !default;
+$b-3:   600 !default;
+$b-4:   800 !default;
+$b-5:   bolder !default;
+
+$fw-base: $b-2 !default;
+
+
+$f-h1: $f-base * 2.5 !default;
+$f-h2: $f-base * 2 !default;
+$f-h3: $f-base * 1.75 !default;
+$f-h4: $f-base * 1.5 !default;
+$f-h5: $f-base * 1.25 !default;
+$f-h6: $f-base !default;
+
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+
+$card-border-color: #dcd8da;

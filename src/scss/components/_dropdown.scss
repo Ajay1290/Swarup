@@ -1,0 +1,72 @@
+.sw-droplabel {
+    cursor: pointer;
+}
+
+.sw-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sw-dropmenu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 5px 0px;
+    max-height: 350px;
+    overflow-y: auto;
+    min-width: 200px;
+    z-index: 1000;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.sw-dropmenu>.sw-item {
+    font-family: inherit;
+    padding: 10px 25px;
+    color: black;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.sw-dropmenu>.sw-item:hover {
+    background: rgba(10, 24, 31, 0.1);
+}
+
+.sw-dropmenu.active {
+    display: inline-block;
+    opacity: 1;
+}
+
+.sw-dropmenu.is__opening {
+    display: block !important;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    transition-duration: 270ms;
+}
+
+.sw-dropmenu.active.is__closeing {
+    display: block !important;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition-duration: 270ms;
+}
+
+.sw-dropmenu::-webkit-scrollbar {
+    background: #eee;
+    width: 8px;
+    border-right: 0.3px solid #e1e1e1;
+}
+
+.sw-dropmenu::-webkit-scrollbar-thumb {
+    background: #d1d0d0;
+    width: 4px;
+    border-radius: 4px;
+}
